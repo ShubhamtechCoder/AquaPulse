@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaPulse - Water Loss Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="hi">हिंदी</option>
+        </select>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="AquaPulse Logo">
+                <h1 data-translate="app_name">AquaPulse</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" data-translate="nav_home">Home</a></li>
+                    <li><a href="#features" data-translate="nav_features">Features</a></li>
+                    <li><a href="#how-it-works" data-translate="nav_how_it_works">How It Works</a></li>
+                    <li><a href="#dashboard" data-translate="nav_dashboard">Dashboard</a></li>
+                    <li><a href="#rewards" data-translate="nav_rewards">Rewards</a></li>
+                    <li><a href="#contact" data-translate="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn btn-login" data-translate="btn_login">Login</button>
+                <button class="btn btn-signup" data-translate="btn_signup">Sign Up</button>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#home" data-translate="nav_home">Home</a></li>
+            <li><a href="#features" data-translate="nav_features">Features</a></li>
+            <li><a href="#how-it-works" data-translate="nav_how_it_works">How It Works</a></li>
+            <li><a href="#dashboard" data-translate="nav_dashboard">Dashboard</a></li>
+            <li><a href="#rewards" data-translate="nav_rewards">Rewards</a></li>
+            <li><a href="#contact" data-translate="nav_contact">Contact</a></li>
+            <li>
+                <button class="btn btn-login" data-translate="btn_login">Login</button>
+                <button class="btn btn-signup" data-translate="btn_signup">Sign Up</button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 data-translate="hero_title">Join the Fight Against Water Wastage</h2>
+                <p data-translate="hero_subtitle">Report leaks, verify issues, and earn rewards while helping conserve water in your community.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" data-translate="btn_report_leak">Report a Leak</button>
+                    <button class="btn btn-secondary" data-translate="btn_learn_more">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.png" alt="Water Conservation">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <h3 data-translate="stat_reports">10,000+</h3>
+                <p data-translate="stat_reports_label">Leaks Reported</p>
+            </div>
+            <div class="stat-item">
+                <h3 data-translate="stat_verified">7,500+</h3>
+                <p data-translate="stat_verified_label">Verified Cases</p>
+            </div>
+            <div class="stat-item">
+                <h3 data-translate="stat_liters">25M+</h3>
+                <p data-translate="stat_liters_label">Liters Saved</p>
+            </div>
+            <div class="stat-item">
+                <h3 data-translate="stat_users">50,000+</h3>
+                <p data-translate="stat_users_label">Active Users</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title" data-translate="features_title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 data-translate="feature_geo_title">Geo-tagged Leak Reporting</h3>
+                    <p data-translate="feature_geo_desc">Pinpoint exact locations of water leaks with GPS technology for accurate reporting.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-translate="feature_crowd_title">Crowd Verification</h3>
+                    <p data-translate="feature_crowd_desc">Community members can verify reported leaks to ensure accuracy before authorities act.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 data-translate="feature_ai_title">AI-Powered Risk Mapping</h3>
+                    <p data-translate="feature_ai_desc">Our AI predicts high-risk areas for water leaks based on historical data and patterns.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 data-translate="feature_rewards_title">Incentivized Engagement</h3>
+                    <p data-translate="feature_rewards_desc">Earn points and rewards for reporting and verifying leaks in your community.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3 data-translate="feature_dashboard_title">Impact Dashboards</h3>
+                    <p data-translate="feature_dashboard_desc">Track your personal impact and community-wide water savings in real-time.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 data-translate="feature_recognition_title">Recognition System</h3>
+                    <p data-translate="feature_recognition_desc">Get recognized as a Water Hero in your community for your contributions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title" data-translate="how_it_works_title">How AquaPulse Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 data-translate="step1_title">Spot a Leak</h3>
+                        <p data-translate="step1_desc">Notice a water leak in your neighborhood, street, or public space.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 data-translate="step2_title">Report with AquaPulse</h3>
+                        <p data-translate="step2_desc">Open the app, take a photo, and tag the location. It takes just 30 seconds!</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 data-translate="step3_title">Community Verification</h3>
+                        <p data-translate="step3_desc">Other users nearby can verify the report to confirm its validity.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 data-translate="step4_title">Authorities Notified</h3>
+                        <p data-translate="step4_desc">Verified reports are immediately sent to local water authorities.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3 data-translate="step5_title">Track Resolution</h3>
+                        <p data-translate="step5_desc">Follow the status of your report until the leak is fixed.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3 data-translate="step6_title">Earn Rewards</h3>
+                        <p data-translate="step6_desc">Get points and recognition for your contribution to water conservation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview Section -->
+    <section id="dashboard" class="dashboard-preview">
+        <div class="container">
+            <h2 class="section-title" data-translate="dashboard_title">Real-Time Water Conservation Dashboard</h2>
+            <div class="dashboard-container">
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <h4 data-translate="dashboard_leaks_reported">Leaks Reported</h4>
+                        <div class="stat-value">1,247</div>
+                        <div class="stat-change positive">+12% this week</div>
+                    </div>
+                    <div class="stat-card">
+                        <h4 data-translate="dashboard_leaks_fixed">Leaks Fixed</h4>
+                        <div class="stat-value">983</div>
+                        <div class="stat-change positive">+8% this week</div>
+                    </div>
+                    <div class="stat-card">
+                        <h4 data-translate="dashboard_water_saved">Water Saved</h4>
+                        <div class="stat-value">3.2M liters</div>
+                        <div class="stat-change positive">+450K this week</div>
+                    </div>
+                    <div class="stat-card">
+                        <h4 data-translate="dashboard_active_users">Active Users</h4>
+                        <div class="stat-value">8,421</div>
+                        <div class="stat-change positive">+324 this week</div>
+                    </div>
+                </div>
+                <div class="dashboard-map" id="leak-map">
+                    <!-- Map will be rendered here by JavaScript -->
+                </div>
+            </div>
+            <div class="dashboard-cta">
+                <button class="btn btn-primary" data-translate="btn_view_full_dashboard">View Full Dashboard</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rewards Section -->
+    <section id="rewards" class="rewards">
+        <div class="container">
+            <h2 class="section-title" data-translate="rewards_title">Earn Rewards & Recognition</h2>
+            <p class="section-subtitle" data-translate="rewards_subtitle">Your contributions to water conservation don't go unnoticed</p>
+            
+            <div class="rewards-grid">
+                <div class="reward-card">
+                    <div class="reward-badge bronze">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 data-translate="reward_bronze_title">Water Saver</h3>
+                    <p data-translate="reward_bronze_desc">Report 5 verified leaks to earn this badge and 500 points.</p>
+                </div>
+                <div class="reward-card">
+                    <div class="reward-badge silver">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 data-translate="reward_silver_title">Water Guardian</h3>
+                    <p data-translate="reward_silver_desc">Report 20 verified leaks to earn this badge and 2,000 points.</p>
+                </div>
+                <div class="reward-card">
+                    <div class="reward-badge gold">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 data-translate="reward_gold_title">Water Hero</h3>
+                    <p data-translate="reward_gold_desc">Report 50 verified leaks to earn this badge and 5,000 points.</p>
+                </div>
+                <div class="reward-card">
+                    <div class="reward-badge platinum">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 data-translate="reward_platinum_title">Water Champion</h3>
+                    <p data-translate="reward_platinum_desc">Report 100+ verified leaks to earn this prestigious badge.</p>
+                </div>
+            </div>
+            
+            <div class="rewards-points">
+                <h3 data-translate="rewards_points_title">Redeem Your Points</h3>
+                <p data-translate="rewards_points_desc">Exchange your earned points for exciting rewards:</p>
+                
+                <div class="points-options">
+                    <div class="points-option">
+                        <div class="points-value">500 pts</div>
+                        <div class="points-desc" data-translate="reward_500">Mobile recharge voucher</div>
+                    </div>
+                    <div class="points-option">
+                        <div class="points-value">1,000 pts</div>
+                        <div class="points-desc" data-translate="reward_1000">Shopping discount coupons</div>
+                    </div>
+                    <div class="points-option">
+                        <div class="points-value">2,500 pts</div>
+                        <div class="points-desc" data-translate="reward_2500">Smart water bottle</div>
+                    </div>
+                    <div class="points-option">
+                        <div class="points-value">5,000 pts</div>
+                        <div class="points-desc" data-translate="reward_5000">Featured on our Water Heroes wall</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-translate="testimonials_title">What Our Users Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p data-translate="testimonial1_text">"AquaPulse made it so easy to report a leak near my home. Within 2 days, the municipal team came and fixed it. I even earned points for my report!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/user1.jpg" alt="Rahul K.">
+                            <div>
+                                <h4>Rahul K.</h4>
+                                <span data-translate="testimonial1_location">Bengaluru, Karnataka</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p data-translate="testimonial2_text">"As a community leader, I encourage all our residents to use AquaPulse. We've saved thousands of liters by reporting leaks promptly."</p>
+                        <div class="testimonial-author">
+                            <img src="images/user2.jpg" alt="Priya M.">
+                            <div>
+                                <h4>Priya M.</h4>
+                                <span data-translate="testimonial2_location">Chennai, Tamil Nadu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p data-translate="testimonial3_text">"The rewards system motivated our students to participate. Now our college has a Water Heroes club thanks to AquaPulse!"</p>
+                        <div class="testimonial-author">
+                            <img src="images/user3.jpg" alt="Dr. Amit S.">
+                            <div>
+                                <h4>Dr. Amit S.</h4>
+                                <span data-translate="testimonial3_location">Professor, Delhi University</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download App Section -->
+    <section class="download-app">
+        <div class="container">
+            <div class="download-content">
+                <h2 data-translate="download_title">Get the AquaPulse App</h2>
+                <p data-translate="download_subtitle">Join thousands of users saving water across India</p>
+                <div class="download-buttons">
+                    <a href="#" class="download-btn">
+                        <img src="images/google-play-badge.png" alt="Get on Google Play">
+                    </a>
+                    <a href="#" class="download-btn">
+                        <img src="images/app-store-badge.png" alt="Download on the App Store">
+                    </a>
+                </div>
+            </div>
+            <div class="download-image">
+                <img src="images/app-screens.png" alt="AquaPulse App Screens">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact_title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>support@aquapulse.in</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>1800 123 4567</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span data-translate="contact_address">AquaPulse Solutions, Tech Park, Bengaluru, Karnataka 560001</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder=" " required>
+                            <label for="name" data-translate="form_name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder=" " required>
+                            <label for="email" data-translate="form_email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder=" ">
+                            <label for="phone" data-translate="form_phone">Phone Number (optional)</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder=" " required></textarea>
+                            <label for="message" data-translate="form_message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-translate="form_submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title" data-translate="faq_title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" data-translate="faq1_question">How do I report a water leak?</button>
+                    <div class="faq-answer">
+                        <p data-translate="faq1_answer">To report a leak, simply open the AquaPulse app, tap the "Report Leak" button, take a photo of the leak, and tag its location using your phone's GPS. Add any additional details and submit. It takes less than a minute!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" data-translate="faq2_question">How are rewards calculated?</button>
+                    <div class="faq-answer">
+                        <p data-translate="faq2_answer">You earn 100 points for each verified leak report. If your report gets verified by 3 other community members, you earn an extra 50 points. Bonus points are awarded for being the first to report a leak in an area.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" data-translate="faq3_question">What happens after I report a leak?</button>
+                    <div class="faq-answer">
+                        <p data-translate="faq3_answer">Your report is immediately visible to other users nearby who can verify it. Once verified, it's sent to local water authorities. You'll receive updates on the status until the leak is fixed.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" data-translate="faq4_question">Is my personal information safe?</button>
+                    <div class="faq-answer">
+                        <p data-translate="faq4_answer">Yes, we prioritize your privacy. Your exact location is only shared with authorities for leak resolution. Community members see generalized locations. Read our Privacy Policy for details.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" data-translate="faq5_question">Can I use AquaPulse without a smartphone?</button>
+                    <div class="faq-answer">
+                        <p data-translate="faq5_answer">Currently, the mobile app is our primary platform, but we're working on SMS-based reporting for feature phones. You can also ask a friend or community volunteer to report on your behalf.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <h2 class="section-title" data-translate="partners_title">Our Partners</h2>
+            <div class="partners-grid">
+                <img src="images/partner1.png" alt="Ministry of Water Resources">
+                <img src="images/partner2.png" alt="Swachh Bharat Mission">
+                <img src="images/partner3.png" alt="Smart Cities Mission">
+                <img src="images/partner4.png" alt="Jal Shakti">
+                <img src="images/partner5.png" alt="Indian Water Works Association">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="images/logo-white.png" alt="AquaPulse Logo" class="footer-logo">
+                    <p data-translate="footer_about">AquaPulse is a citizen-led initiative to combat water wastage through community participation and technology.</p>
+                </div>
+                <div class="footer-col">
+                    <h3 data-translate="footer_links_title">Quick Links</h3>
+                    <ul>
+                        <li><a href="#home" data-translate="nav_home">Home</a></li>
+                        <li><a href="#features" data-translate="nav_features">Features</a></li>
+                        <li><a href="#how-it-works" data-translate="nav_how_it_works">How It Works</a></li>
+                        <li><a href="#dashboard" data-translate="nav_dashboard">Dashboard</a></li>
+                        <li><a href="#rewards" data-translate="nav_rewards">Rewards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 data-translate="footer_resources_title">Resources</h3>
+                    <ul>
+                        <li><a href="#" data-translate="footer_faq">FAQ</a></li>
+                        <li><a href="#" data-translate="footer_blog">Blog</a></li>
+                        <li><a href="#" data-translate="footer_water_tips">Water Saving Tips</a></li>
+                        <li><a href="#" data-translate="footer_community">Community Guidelines</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 data-translate="footer_legal_title">Legal</h3>
+                    <ul>
+                        <li><a href="#" data-translate="footer_terms">Terms of Service</a></li>
+                        <li><a href="#" data-translate="footer_privacy">Privacy Policy</a></li>
+                        <li><a href="#" data-translate="footer_cookies">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 data-translate="footer_newsletter_title">Newsletter</h3>
+                    <p data-translate="footer_newsletter_desc">Subscribe for updates and water conservation tips.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder=" " data-translate="footer_email_placeholder" required>
+                        <button type="submit" data-translate="footer_subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer_copyright">© 2023 AquaPulse. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Report Leak Modal -->
+    <div class="modal" id="reportModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 data-translate="modal_report_title">Report a Water Leak</h2>
+            <form id="reportForm">
+                <div class="form-group">
+                    <label for="leakLocation" data-translate="modal_location">Location</label>
+                    <input type="text" id="leakLocation" placeholder=" " required>
+                    <button type="button" class="btn-locate" data-translate="modal_locate_me">
+                        <i class="fas fa-location-arrow"></i> Use My Location
+                    </button>
+                </div>
+                <div class="form-group">
+                    <label for="leakType" data-translate="modal_leak_type">Type of Leak</label>
+                    <select id="leakType" required>
+                        <option value="" disabled selected data-translate="modal_select_option">Select an option</option>
+                        <option value="pipe" data-translate="modal_pipe">Broken Pipe</option>
+                        <option value="tap" data-translate="modal_tap">Leaking Tap</option>
+                        <option value="tank" data-translate="modal_tank">Overflowing Tank</option>
+                        <option value="other" data-translate="modal_other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="leakSeverity" data-translate="modal_severity">Severity</label>
+                    <select id="leakSeverity" required>
+                        <option value="" disabled selected data-translate="modal_select_option">Select an option</option>
+                        <option value="low" data-translate="modal_low">Low (dripping)</option>
+                        <option value="medium" data-translate="modal_medium">Medium (small stream)</option>
+                        <option value="high" data-translate="modal_high">High (large flow)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="leakPhoto" data-translate="modal_photo">Photo (optional but recommended)</label>
+                    <input type="file" id="leakPhoto" accept="image/*">
+                    <div class="photo-preview" id="photoPreview"></div>
+                </div>
+                <div class="form-group">
+                    <label for="leakDescription" data-translate="modal_description">Additional Details</label>
+                    <textarea id="leakDescription" rows="3" placeholder=" "></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" data-translate="modal_submit_report">Submit Report</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 data-translate="modal_login_title">Login to AquaPulse</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail" data-translate="modal_email">Email</label>
+                    <input type="email" id="loginEmail" placeholder=" " required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword" data-translate="modal_password">Password</label>
+                    <input type="password" id="loginPassword" placeholder=" " required>
+                </div>
+                <div class="form-options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="rememberMe">
+                        <label for="rememberMe" data-translate="modal_remember">Remember me</label>
+                    </div>
+                    <a href="#" data-translate="modal_forgot">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn btn-primary" data-translate="modal_login">Login</button>
+                <div class="login-divider">
+                    <span data-translate="modal_or">or</span>
+                </div>
+                <div class="social-login">
+                    <button type="button" class="btn-social google">
+                        <i class="fab fa-google"></i>
+                        <span data-translate="modal_google">Continue with Google</span>
+                    </button>
+                    <button type="button" class="btn-social facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span data-translate="modal_facebook">Continue with Facebook</span>
+                    </button>
+                </div>
+                <div class="switch-form">
+                    <span data-translate="modal_no_account">Don't have an account?</span>
+                    <a href="#" id="switchToSignup" data-translate="modal_signup">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 data-translate="modal_signup_title">Create an Account</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="signupName" data-translate="modal_name">Full Name</label>
+                    <input type="text" id="signupName" placeholder=" " required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail" data-translate="modal_email">Email</label>
+                    <input type="email" id="signupEmail" placeholder=" " required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPhone" data-translate="modal_phone">Phone Number</label>
+                    <input type="tel" id="signupPhone" placeholder=" " required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword" data-translate="modal_password">Password</label>
+                    <input type="password" id="signupPassword" placeholder=" " required>
+                </div>
+                <div class="form-group">
+                    <label for="signupConfirm" data-translate="modal_confirm">Confirm Password</label>
+                    <input type="password" id="signupConfirm" placeholder=" " required>
+                </div>
+                <div class="form-group">
+                    <label for="signupLocation" data-translate="modal_location">Your Location</label>
+                    <select id="signupLocation" required>
+                        <option value="" disabled selected data-translate="modal_select_option">Select an option</option>
+                        <option value="urban" data-translate="modal_urban">Urban</option>
+                        <option value="rural" data-translate="modal_rural">Rural</option>
+                    </select>
+                </div>
+                <div class="form-terms">
+                    <input type="checkbox" id="agreeTerms" required>
+                    <label for="agreeTerms" data-translate="modal_terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+                <button type="submit" class="btn btn-primary" data-translate="modal_signup">Sign Up</button>
+                <div class="switch-form">
+                    <span data-translate="modal_have_account">Already have an account?</span>
+                    <a href="#" id="switchToLogin" data-translate="modal_login">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="language-switcher.js"></script>
+    <script src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_ACTUAL_API_KEY&libraries=visualization&callback=initMap" async defer></script>
+</body>
+</html>
