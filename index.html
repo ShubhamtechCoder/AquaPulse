@@ -538,13 +538,14 @@
             <h2 data-translate="modal_report_title">Report a Water Leak</h2>
             <form id="reportForm">
                 <div class="form-group">
-                    <label for="leakLocation" data-translate="modal_location">Location</label>
                     <input type="text" id="leakLocation" placeholder=" " required>
+                    <label for="leakLocation" data-translate="modal_location">Location</label>
                     <button type="button" class="btn-locate" data-translate="modal_locate_me">
                         <i class="fas fa-location-arrow"></i> Use My Location
                     </button>
                 </div>
                 <div class="form-group">
+                    <input type="text" id="type" placeholder=" " required>
                     <label for="leakType" data-translate="modal_leak_type">Type of Leak</label>
                     <select id="leakType" required>
                         <option value="" disabled selected data-translate="modal_select_option">Select an option</option>
@@ -555,6 +556,7 @@
                     </select>
                 </div>
                 <div class="form-group">
+                    <input type="text" id="severity" placeholder=" " required>
                     <label for="leakSeverity" data-translate="modal_severity">Severity</label>
                     <select id="leakSeverity" required>
                         <option value="" disabled selected data-translate="modal_select_option">Select an option</option>
@@ -564,13 +566,14 @@
                     </select>
                 </div>
                 <div class="form-group">
+                    <input type="text" id="photo" placeholder=" " required>
                     <label for="leakPhoto" data-translate="modal_photo">Photo (optional but recommended)</label>
                     <input type="file" id="leakPhoto" accept="image/*">
                     <div class="photo-preview" id="photoPreview"></div>
                 </div>
                 <div class="form-group">
-                    <label for="leakDescription" data-translate="modal_description">Additional Details</label>
                     <textarea id="leakDescription" rows="3" placeholder=" "></textarea>
+                    <label for="leakDescription" data-translate="modal_description">Additional Details</label>
                 </div>
                 <button type="submit" class="btn btn-primary" data-translate="modal_submit_report">Submit Report</button>
             </form>
