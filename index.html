@@ -545,10 +545,8 @@
                     </button>
                 </div>
                 <div class="form-group">
-                    <input type="text" id="type" placeholder=" " required>
-                    <label for="leakType" data-translate="modal_leak_type">Type of Leak</label>
                     <select id="leakType" required>
-                        <option value="" disabled selected data-translate="modal_select_option">Select an option</option>
+                        <option value="" disabled selected data-translate="modal_select_option">Type of Leak</option>
                         <option value="pipe" data-translate="modal_pipe">Broken Pipe</option>
                         <option value="tap" data-translate="modal_tap">Leaking Tap</option>
                         <option value="tank" data-translate="modal_tank">Overflowing Tank</option>
@@ -556,17 +554,14 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <input type="text" id="severity" placeholder=" " required>
-                    <label for="leakSeverity" data-translate="modal_severity">Severity</label>
                     <select id="leakSeverity" required>
-                        <option value="" disabled selected data-translate="modal_select_option">Select an option</option>
+                        <option value="" disabled selected data-translate="modal_select_option">Severity</option>
                         <option value="low" data-translate="modal_low">Low (dripping)</option>
                         <option value="medium" data-translate="modal_medium">Medium (small stream)</option>
                         <option value="high" data-translate="modal_high">High (large flow)</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <input type="text" id="photo" placeholder=" " required>
                     <label for="leakPhoto" data-translate="modal_photo">Photo (optional but recommended)</label>
                     <input type="file" id="leakPhoto" accept="image/*">
                     <div class="photo-preview" id="photoPreview"></div>
@@ -652,7 +647,7 @@
                 <div class="form-group">
                     <label for="signupLocation" data-translate="modal_location"></label>
                     <select id="signupLocation" required>
-                        <option value="" disabled selected data-translate="modal_select_option">Select an option</option>
+                        <option value="" disabled selected data-translate="modal_select_option">Location</option>
                         <option value="urban" data-translate="modal_urban">Urban</option>
                         <option value="rural" data-translate="modal_rural">Rural</option>
                     </select>
